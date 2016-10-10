@@ -19,7 +19,12 @@ function addAnimation($el, config){
     var offset = config.end - config.start; //400 vanaf 100
     config.frames.forEach(function(frame){
         var px = config.start + (offset * frame.index)
-        var css = 'transform: translate(' + frame.x +'%,' + frame.y + '%)'; 
+        var css = 'transform: translate(' + frame.x +'%,' + frame.y + '%);'; 
+        
+        //shiny
+        if(frame.bgColor)
+            css += 'background-color: ' + frame.bgColor + ';';
+        
         wrapper.attr('data-' + px, css);
     })
     //Make sure the element is hidden @ the start and end.
@@ -40,8 +45,8 @@ var configB = {
     start: 550,
     end: 900,
     frames: [
-        { index: 0,  x: 45, y: 40},
-        { index: 1, x: -30, y: 40},
+        { index: 0,  x: 45, y: 40, bgColor: red},
+        { index: 1, x: -30, y: 40, bgColor: blue},
     ]
 }
 
