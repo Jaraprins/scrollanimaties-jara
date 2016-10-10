@@ -1,0 +1,120 @@
+<html>  
+    <head>
+        <link href="style.css" rel="stylesheet" ></link>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald" rel="stylesheet">
+        <title>Animate based on scroll</title>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="skrollr.min.js" ></script>
+        <script src="app.js" ></script>
+
+
+
+        <!-- Voorbeelden -->
+        <!-- http://pepsized.com/wp-content/uploads/2012/12/merry-xmas/index.html -->
+        <!-- https://www.bram.us/2014/01/01/skrollr-css-animations-linked-to-scroll-position/ -->
+
+    </head>
+    <body>
+        <div class="contentContainer">
+            <header class="header">
+                <div class="header-text">
+                    <h1> LEARN TO LOOK PAST YOUR FEARS<h1>
+                </div>
+                <div  class="header-img">
+                    <img src="header-img.jpg">
+                </div>
+            </header>
+            <div class="main-content">
+                <h3>Animate!</h3>
+
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            
+                <div class="top3-title">
+                    <h3>This is the top 3 of most amazing places in New Zealand</h3>
+                </div>
+
+                <div class="flex-container">
+                  <div class="flex-item"></div>
+                  <div class="flex-item"></div>
+                  <div class="flex-item"></div>
+                </div>
+                <div class="randomfield"></div>
+            </div>
+        </div>  
+
+        <div class="animationContainer">
+
+            <!--<div data-0="background-color:rgb(0,0,255);" data-500="background-color:rgb(255,0,0);">WOOOT</div>-->   
+
+            <div class="animationWrapper">
+                 <div class="square-two goAndBack goAndBack2">
+                     <div class="img-button">
+                        <h2>EXPLORE THE CULTURE<h2/>
+                     </div>
+                    <img src="img/img_03691.jpg"/>
+                 </div>
+            </div>
+
+            <div class="animationWrapper">
+                 <div class="square-two goAndBackReverse goAndBackReverse2">
+                    <div class="img-button">
+                        <h2>LIFE ON THE EDGE<h2/>
+                     </div>
+                    <img src="img/bungy-jumping-in-newzeland.png"/>
+                 </div>
+            </div>
+
+            <div class="animationWrapper">
+                 <div class="goAndStop1 top">
+                    <div class="top-img">
+                        <img src="img/Luxury-New-Zealand-Tours.jpg"/>
+                    </div>
+                    <div class="top-description">
+                        <h2>01. Rotorua</h2>
+                        <p>Rotorua, a town set on its namesake lake on New Zealand's North Island, is renowned for its geothermal activity and Maori culture. In Te Puia’s Whakarewarewa Valley, there are bubbling mud pools and the 30m-tall Pohutu Geyser, which erupts many times daily. </p>
+                    </div> 
+                 </div>
+            </div>
+
+            <div class="animationWrapper">
+                 <div class="goAndStop2 top-even">
+                    <div class="top-img">
+                        <img src="img/Lake-taupo-falls.jpg"/>
+                    </div>
+                    <div class="top-description">
+                        <h2>02. Lake Taupo</h2>
+                        <p>Rotorua, a town set on its namesake lake on New Zealand's North Island, is renowned for its geothermal activity and Maori culture. In Te Puia’s Whakarewarewa Valley, there are bubbling mud pools and the 30m-tall Pohutu Geyser, which erupts many times daily. </p>
+                    </div> 
+                 </div>
+            </div>
+
+            <div class="animationWrapper">
+                 <div class="goAndStop3 top">
+                    <div class="top-img">
+                        <img src="img/tongariro-national-park.jpg"/>
+                    </div>
+                    <div class="top-description">
+                        <h2>03. Tongariro National Park</h2>
+                        <p>Rotorua, a town set on its namesake lake on New Zealand's North Island, is renowned for its geothermal activity and Maori culture. In Te Puia’s Whakarewarewa Valley, there are bubbling mud pools and the 30m-tall Pohutu Geyser, which erupts many times daily. </p>
+                    </div> 
+                 </div>
+            </div>
+
+            <div class="animationWrapper">
+                 <div class="changebgc color-container">
+                 </div>
+            </div>
+
+            <!--<div class="animationWrapper">
+                 <img src="stijn.jpg" class="avatar stopAndGo">
+            </div>-->
+
+        </div>
+        
+
+    </body>
+
+</html>
